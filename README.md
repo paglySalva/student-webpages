@@ -1,14 +1,20 @@
 # student-webpages
 Test repository for allowing students to deploy their webpages
 
+- This repository contains a folder for each of you, identified by your student number (e.g., student-01).
+- Open the "example" folder, where you will find three files: `index.html`, `styles.css`, and `scripts.js`, representing the HTML, CSS, and JavaScript files, respectively. 
+- These files contain the code for the example web page (the online shop for trainers).
+- Do you want to implement your own online shop? Copy the code from these files and paste it into the CodePen environment. Ensure the HTML code (`index.html`) goes in the left panel, the CSS code (`styles.css`) in the middle panel, and the JavaScript code (`scripts.js`) in the right panel of the CodePen editor.
+- Make some changes and develop your own idea. If you feel adventurous, there are tips (cheat sheets) for HTML, CSS, and JavaScript below that will help you be more creative. Do not hesitate to reach out to any UWS staff member if you have questions.
+- Once you have created your web page, contact any staff member. We will copy your files onto a USB stick and upload them to the repository, making your web page accessible from anywhere in the world!
+
+
+You can access the example project [here](https://paglysalva.github.io/student-webpages/example/).
 
 
 
 
-
-
-
-## Table of Contents
+## Cheat Sheets you can use
  - [HTML Cheat Sheet](#html-cheat-sheet)
  - [CSS Cheat Sheet](#css-cheat-sheet)
  - [JavaScript Cheat Sheet](#javascript-cheat-sheet)
