@@ -1,8 +1,17 @@
 # student-webpages
 Test repository for allowing students to deploy their webpages
 
+
+
+
+
+
+
+
 ## Table of Contents
  - [HTML Cheat Sheet](#html-cheat-sheet)
+ - [CSS Cheat Sheet](#css-cheat-sheet)
+ - [JavaScript Cheat Sheet](#javascript-cheat-sheet)
 
 
 # HTML Cheat Sheet
@@ -389,3 +398,202 @@ tag | element
 **progress** | progress of a task
 **meter** | display a gauge
 **time** | machine-readable time indication
+
+
+# CSS Cheat Sheet
+A quick reference guide for CSS properties and selectors.
+
+## Basic Sintax
+```css
+selector {
+    property: value;
+}
+```
+## Selectors
+### Element Selector
+#### Paragraph
+Selects all `<p>` elements and sets their text color to blue.
+```css
+p {
+    color: blue;
+}
+```
+#### Headings
+```css
+h1 {
+    font-size: 2em;
+    color: darkblue;
+}
+h2 {
+    font-size: 1.5em;
+    color: darkgreen;
+}
+h3 {
+    font-size: 1.2em;
+    color: darkred;
+}
+```
+#### Divisions
+```css
+div {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+```
+### Class Selectors
+Example: Selects all elements with the class “classname” and sets the font size to 16px.
+```css
+.classname {
+    font-size: 16px;
+}
+```
+### ID Selectors
+Example: Selects the element with the ID “idname” and sets the margin to 20px.
+```css
+#idname {
+    margin: 20px;
+}
+```
+## Common Properties
+### Text
+```css
+color: blue; /* Sets the text color */
+font-family: Arial, sans-serif; /* Sets the font family */
+font-size: 16px; /* Sets the font size */
+font-weight: bold; /* Sets the font weight */
+text-align: center; /* Aligns text to the center */
+text-decoration: underline; /* Underlines text */
+text-transform: uppercase; /* Transforms text to uppercase */
+line-height: 1.5; /* Sets the line height */
+```
+### Background
+```css
+background-color: #f0f0f0; /* Sets the background color */
+background-image: url('image.jpg'); /* Sets a background image */
+background-repeat: no-repeat; /* Prevents the background image from repeating */
+background-size: cover; /* Scales the background image to cover the element */
+```
+### Box Model
+```css
+margin: 20px; /* Sets the margin */
+padding: 10px; /* Sets the padding */
+border: 1px solid #ccc; /* Sets the border */
+width: 100px; /* Sets the width */
+height: 100px; /* Sets the height */
+box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+```
+### Display and Positioning
+```css
+display: block; /* Sets the display to block */
+display: inline; /* Sets the display to inline */
+display: inline-block; /* Sets the display to inline-block */
+position: relative; /* Sets the position to relative */
+position: absolute; /* Sets the position to absolute */
+position: fixed; /* Sets the position to fixed */
+top: 10px; /* Sets the top position */
+left: 10px; /* Sets the left position */
+right: 10px; /* Sets the right position */
+bottom: 10px; /* Sets the bottom position */
+z-index: 10; /* Sets the stack order */
+```
+### Flexbox
+```css
+display: flex; /* Enables flexbox layout */
+flex-direction: row; /* Sets the direction of the flex items */
+justify-content: center; /* Aligns flex items along the main axis */
+align-items: center; /* Aligns flex items along the cross axis */
+flex-wrap: wrap; /* Allows flex items to wrap */
+```
+### Grid
+```css
+display: grid; /* Enables grid layout */
+grid-template-columns: repeat(3, 1fr); /* Defines the columns of the grid */
+grid-template-rows: auto; /* Defines the rows of the grid */
+gap: 10px; /* Sets the gap between grid items */
+```
+### Pseudo-classes and Pseudo-elements
+```css
+a:hover {
+    color: red; /* Changes the color of links on hover */
+}
+a:visited {
+    color: purple; /* Changes the color of visited links */
+}
+p::before {
+    content: "Note: "; /* Adds content before the paragraph */
+    color: red; /* Sets the color of the added content */
+}
+```
+
+
+## Responsive Design
+
+```css
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue; /* Changes the background color on small screens */
+    }
+}
+```
+
+
+# JavaScript Cheat Sheet
+A quick reference guide for JavaScript actions focused on user interactions.
+
+## Variables
+```javascript
+let name = "John"; // Can be reassigned
+const age = 30;   // Cannot be reassigned
+```
+
+
+## Functions
+```javascript
+function greet() {
+    console.log("Hello, World!");
+}
+
+greet(); // Calls the function
+```
+
+## Event Listeners
+### Click Event
+Adds a click event listener to a button with the ID “myButton” that displays an alert when clicked.
+```javascript
+document.getElementById("myButton").addEventListener("click", function() {
+    alert("Button clicked!");
+});
+```
+
+### Mouseover Event
+Changes the background color of an element to yellow when the mouse is over it.
+```javascript
+document.getElementById("myElement").addEventListener("mouseover", function() {
+    this.style.backgroundColor = "yellow";
+});
+```
+
+### Input Event
+Updates the text content of an element with the ID “output” with the value of an input field as the user types.
+```javascript
+document.getElementById("myInput").addEventListener("input", function() {
+    document.getElementById("output").textContent = this.value;
+});
+```
+
+## DOM Manipulation
+### Changing Content
+Changes the text content of an element.
+```javascript
+document.getElementById("myElement").textContent = "New Content";
+```
+
+
+### Adding and Removing Classes
+Adds or removes a class from an element.
+```javascript
+document.getElementById("myElement").classList.add("myClass");
+document.getElementById("myElement").classList.remove("myClass");
+
+```
